@@ -41,4 +41,7 @@ Rails.application.configure do
   
   #Mail
   config.action_mailer.default_url_options = { host: 'https://mini-insta-samizhang.c9users.io' }
+  
+  Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
+  Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
 end
