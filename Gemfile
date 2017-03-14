@@ -8,7 +8,7 @@ gem 'devise'
 # Bootstrap
 gem 'bootstrap-sass'
 # Paperclip for posting imagery 
-gem 'paperclip', '~> 4.2.1'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
