@@ -16,7 +16,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+    background-color: #F1F1F1;
+}
 
 .image_style {
-  border: 10px solid white;
+    background: white;
+    border: 20px solid white;
 }
+

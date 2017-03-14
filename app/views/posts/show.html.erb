@@ -1,6 +1,8 @@
 <h1>Mini-Insta</h1>
 <hr>
 
-<%= image_tag(@post.image.url(:medium)), class: "image_style" %>
-<br>
-<%= @post.description %>
+<div class="image-style"></div>
+    <%= image_tag(@post.image.url(:medium))%>
+    <br>
+    <%= @post.description %>
+</div>
