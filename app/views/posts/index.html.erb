@@ -1,20 +1,32 @@
 <% if current_user %>
+
     <h2> Mini-Insta</h2>
     <hr>
+    
     <% @post.each do |post| %>
-        <%= image_tag post.image.url(:medium), class: "image_style" %>
+        <div class="image_style">
+            <%= image_tag post.image.url(:medium) %>
+            <br>
+            <%= post.description %>
+        </div>
         <br>
-        <%= post.description %>
         <br>
     <% end %>
+    
 <% else %>
+
     <h2> MiniInsta</h2>
     <h4> Login to upload pictures!</h4>
     <hr>
+    
     <% @post.each do |post| %>
-        <%= image_tag post.image.url(:medium), class: "image_style" %>
+        <div class="image_style">
+            <%= image_tag post.image.url(:medium) %>
+            <br>
+            <%= post.description %>
+        </div>
         <br>
-        <%= post.description %>
         <br>
     <% end %>
+    
 <% end %>
