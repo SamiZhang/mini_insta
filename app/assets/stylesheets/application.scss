@@ -25,3 +25,12 @@ body {
     border: 20px solid white;
 }
 
+input[type="file"] {
+    display: inline-block;
+    left: auto;
+    right: auto;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FA8E84;
+}
